@@ -18,5 +18,6 @@
   <body>
       @include('include.client_navbar')
       @yield('content')
+      @yield('script')
 </body>
 </html>
