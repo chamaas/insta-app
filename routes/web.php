@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\http\Controllers\ClientController;
+use App\http\controllers\AdminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +17,4 @@ use App\http\Controllers\ClientController;
 Route::get('/',[ClientController::class,'hom']);
 Route::get('profile/' , [ClientController::class , 'profile']);
 Route::get('edit_profile/' , [ClientController::class , 'edit_profile']);
+Route::get('admin/' , [AdminController::class , 'dashboard']);
