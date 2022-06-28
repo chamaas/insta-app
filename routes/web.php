@@ -14,3 +14,5 @@ use App\http\Controllers\ClientController;
 */
 
 Route::get('/',[ClientController::class,'hom']);
+Route::get('profile/' , [ClientController::class , 'profile']);
+Route::get('edit_profile/' , [ClientController::class , 'edit_profile']);

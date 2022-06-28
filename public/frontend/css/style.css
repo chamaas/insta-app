@@ -42,6 +42,10 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.nav-items ul{
+  display: flex;
+  list-style-type: none;
+}
 
 .brand-img {
   height: 100px;

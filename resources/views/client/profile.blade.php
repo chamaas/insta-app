@@ -1,161 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Instagram-Clone</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    />
-  </head>
-  <body>
-    <!-- navigation -->
-    <nav class="navbar">
-      <div class="nav-wrapper">
-        <img class="brand-img" src="assets/images/logo.png" />
-        <form class="search-form">
-          <input type="text" class="search-box" placeholder="search.." />
+
+@extends("client_layout.client_layout")
+@section('title')
+Profile
+@endsection
+@section('content')
+  
+<header class="profile-header">
+    <div class="profile-container">
+      <div class="profile">
+        <div class="profile-image">
+          <img src="assets/images/profile.jpg" alt="" />
+        </div>
+        <div class="profile-user-settings">
+          
+        <form action="{{url('/edit_profile')}}">
+        <h1 class="profile-user-name">username</h1>
+        <button class="profile-btn profile-edit-btn" > Edit_Profile</button>
+        <button
+        class="profile-btn profile-settings-btn"
+        aria-label="profile settings"
+        
+      >
+        <i class="fas fa-cog"></i>
+       </button>
         </form>
-        <div class="nav-items">
-          <i class="icon fas fa-home"></i>
-          <i class="icon fas fa-plus"></i>
-          <i class="icon fas fa-heart"></i>
-          <div class="icon user-profile">
-            <i class="fas fa-user"></i>
+          
+         
+        </div>
+        <div class="profile-stats">
+          <ul>
+            <li><span class="profile-stat-count">345</span> posts</li>
+            <li><span class="profile-stat-count">1345</span> followers</li>
+            <li><span class="profile-stat-count">1945</span> following</li>
+          </ul>
+        </div>
+        <div class="profile-bio">
+          <p>
+            <span class="profile-real-name">Name</span> This is a descriptions
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="profile-container">
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="assets/images/2.jpg" class="gallery-image" alt="" />
+          <div class="gallery-item-info">
+            <ul>
+              <li class="gallery-item-likes">
+                <span class="hide-gallery-element">Likes:</span>
+                <i class="fas fa-heart"></i>
+              </li>
+              <li class="gallery-item-comments">
+                <span class="hide-gallery-element">Comments:</span>
+                <i class="fas fa-comment"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://cdn.theatlantic.com/thumbor/pwZ-oMSofZCJftLlWJ0sjfnSk6U=/900x600/media/img/photo/2021/06/winners-2021-bigpicture-natural-wor/a01_5_Michelle%20Valberg/original.jpg"
+            class="gallery-image"
+            alt=""
+          />
+          <div class="gallery-item-info">
+            <ul>
+              <li class="gallery-item-likes">
+                <span class="hide-gallery-element">156:</span>
+                <i class="fas fa-heart"></i>
+              </li>
+              <li class="gallery-item-comments">
+                <span class="hide-gallery-element">100:</span>
+                <i class="fas fa-comment"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://www.thoughtco.com/thmb/GAtp0KJWAXudEuz9ufGu2jKAdYQ=/3909x2199/smart/filters:no_upscale()/film-photography-592347645-59e4d0609abed500119e7b14.jpg"
+            class="gallery-image"
+            alt=""
+          />
+          <div class="gallery-item-info">
+            <ul>
+              <li class="gallery-item-likes">
+                <span class="hide-gallery-element">Likes:</span>
+                <i class="fas fa-heart"></i>
+              </li>
+              <li class="gallery-item-comments">
+                <span class="hide-gallery-element">Comments:</span>
+                <i class="fas fa-comment"></i>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </nav>
-
-    <!-- section -->
-    <section class="main">
-      <div class="wrapper">
-        <div class="left-col">
-          <!---STATUS-->
-
-          <div class="status-wrapper">
-            <div class="status-card">
-              <div class="profile-pic">
-                <img src="assets/images/profile.jpg" alt="" />
-              </div>
-              <p class="username">username</p>
-            </div>
-            <div class="status-card">
-              <div class="profile-pic">
-                <img src="assets/images/profile.jpg" alt="" />
-              </div>
-              <p class="username">username</p>
-            </div>
-            <div class="status-card">
-              <div class="profile-pic">
-                <img src="assets/images/profile.jpg" alt="" />
-              </div>
-              <p class="username">username</p>
-            </div>
-            <div class="status-card">
-              <div class="profile-pic">
-                <img src="assets/images/profile.jpg" alt="" />
-              </div>
-              <p class="username">username</p>
-            </div>
-            <div class="status-card">
-              <div class="profile-pic">
-                <img src="assets/images/profile.jpg" alt="" />
-              </div>
-              <p class="username">username</p>
-            </div>
-
-            <div class="status-card">
-              <div class="profile-pic">
-                <img src="assets/images/profile.jpg" alt="" />
-              </div>
-              <p class="username">username</p>
-            </div>
-
-            <div class="status-card">
-              <div class="profile-pic">
-                <img src="assets/images/profile.jpg" alt="" />
-              </div>
-              <p class="username">username</p>
-            </div>
-          </div>
-
-          <!--POST-->
-
-          <div class="post">
-            <div class="info">
-              <div class="user">
-                <div class="profile-pic">
-                  <img src="assets/images/profile.jpg" alt="" />
-                </div>
-                <p class="username">username</p>
-              </div>
-              <i class="fas fa-ellipsis-h options"></i>
-            </div>
-            <img src="assets/images/1.jpg" class="post-image" />
-            <div class="post-content">
-              <div class="reaction-wrapper">
-                <i class="icon fas fa-heart"></i>
-                <i class="icon fas fa-comment"></i>
-              </div>
-              <p class="likes">2,154 likes</p>
-              <p class="description">
-                <span>username</span> this is a post by username
-              </p>
-              <p class="post-time">2021/12/08</p>
-            </div>
-
-            <div class="comment-wrapper">
-              <img src="assets/images/profile.jpg" class="icon" />
-              <input
-                type="text"
-                class="comment-box"
-                placeholder="Add a comment"
-              />
-              <button class="comment-btn">post</button>
-            </div>
-          </div>
-        </div>
-        <div class="right-col">
-          <!--Profile-Card-->
-
-          <div class="profile-card">
-            <div class="profile-pic">
-              <img src="assets/images/profile.jpg" alt="" />
-            </div>
-            <div>
-              <p class="username">username</p>
-              <p class="sub-text">sub-text</p>
-            </div>
-            <button class="logout-btn">logout</button>
-          </div>
-
-          <!--Suggestion-Card-->
-
-          <p class="suggestion-text">Suggestions For you</p>
-
-          <div class="suggestion-card">
-            <div class="suggestion-pic">
-              <img src="assets/images/2.jpg" alt="" />
-            </div>
-            <div>
-              <p class="username">username</p>
-              <p class="sub-text">sub-text</p>
-            </div>
-            <button class="follow-btn">follow</button>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
+  </main>
+    @endsection
 
     <!-- script -->
+    @section('script')
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
-  </body>
-</html>
+    @endsection
+  
