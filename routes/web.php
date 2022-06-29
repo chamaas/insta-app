@@ -18,3 +18,5 @@ Route::get('/',[ClientController::class,'hom']);
 Route::get('profile/' , [ClientController::class , 'profile']);
 Route::get('edit_profile/' , [ClientController::class , 'edit_profile']);
 Route::get('admin/' , [AdminController::class , 'dashboard']);
+Route::get('login/',[ClientController::class , 'login']);
+Route::get('singnup/',[ClientController::class , 'singnup']);

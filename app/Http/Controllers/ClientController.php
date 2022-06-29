@@ -15,4 +15,13 @@ class ClientController extends Controller
     public function edit_profile(){
         return view('client.edit_profile');
     }
+    public function login()
+        {
+            return view('client.login');
+        }
+    public function singnup()
+        {
+            return view('client.signup');
+        }
+    
 }

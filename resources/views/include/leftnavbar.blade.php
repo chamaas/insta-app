@@ -46,7 +46,7 @@
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-folder "></i>
               <p>
-                Categories
+                Users
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -54,7 +54,7 @@
               <li class="nav-item ">
                 <a href="" class="nav-link  ">
                   <i class="far fa-file nav-icon"></i>
-                  <p>Add category</p>
+                  <p>Add User</p>
                 </a>
               </li>
             </ul>
@@ -62,82 +62,13 @@
               <li class="nav-item">
                 <a href="" class="nav-link ">
                   <i class="far fa-file nav-icon"></i>
-                  <p>Categories</p>
+                  <p>Users</p>
                 </a>
               </li>
             </ul>
           </li>
 
-          <li class="nav-item has-treeview ">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-folder"></i>
-              <p>
-                Sliders
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="" class="nav-link ">
-                  <i class="far fa-file nav-icon"></i>
-                  <p>Add slider</p>
-                </a>
-              </li>
-            </ul>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="" class="nav-link  ">
-                  <i class="far fa-file nav-icon"></i>
-                  <p>Sliders</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-folder"></i>
-              <p>
-                Products
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item ">
-                <a href="" class="nav-link ">
-                  <i class="far fa-file nav-icon"></i>
-                  <p>Add product</p>
-                </a>
-              </li>
-            </ul>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="" class="nav-link ">
-                  <i class="far fa-file nav-icon"></i>
-                  <p>Products</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="nav-item has-treeview ">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-folder"></i>
-              <p>
-                Orders
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview ">
-              <li class="nav-item">
-                <a href="" class="nav-link ">
-                  <i class="far fa-file nav-icon"></i>
-                  <p>Orders</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-
+         
           <li class="nav-header">MISCELLANEOUS</li>
           <li class="nav-item">
             <a href="https://adminlte.io/docs/3.0/" class="nav-link">
