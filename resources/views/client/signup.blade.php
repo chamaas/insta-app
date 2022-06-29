@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="{{asset("frontend\css\style.css")}}" />
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -21,7 +21,7 @@
         <div class="main-content">
           <div
             class="slide-container"
-            style="background-image: url('assets/images/mobile-frame.png')"
+            style="background-image: url('{{asset('frontend/images/mobile-frame.png')}}'"
           >
             <div class="slide-content" id="slide-content">
               <img
@@ -29,10 +29,10 @@
                 class="active"
                 alt="screen1"
               />
-              <img src="assets/images/screen2.jpg" alt="screen2" />
-              <img src="assets/images/screen3.jpg" alt="screen3" />
-              <img src="assets/images/screen4.jpg" alt="screen4" />
-              <img src="assets/images/screen5.jpg" alt="screen5" />
+              <img src="{{asset('frontend/images/screen1.jpg')}}" alt="screen2" />
+              <img src="{{asset('frontend/images/screen2.jpg')}}" alt="screen3" />
+              <img src="{{asset('frontend/images/screen3.jpg')}}" alt="screen4" />
+              <img src="{{asset('frontend/images/screen4.jpg')}}" alt="screen5" />
             </div>
           </div>
           <div class="form-container">
